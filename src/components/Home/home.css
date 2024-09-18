@@ -1,0 +1,99 @@
+.home {
+    padding-top: 80px;
+    width: 100vw;
+    background-color: #333;
+    color: #fff;
+    min-height: calc(100vh - 80px);
+    text-align: center;
+}
+
+.brand-logo {
+    width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%; /* This makes the image rounded */
+    object-fit: cover; /* Ensures the image maintains aspect ratio within the rounded shape */
+}
+
+.brand-name {
+    font-size: 36px;
+    color: #ffcc00;
+    margin: 10px;
+}
+
+.brand-description {
+    font-size: 20px;
+    color: #bbb;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.typing-text {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    border-right: 2px solid #fff; /* Blinking cursor */
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%; /* Ensure the text takes up space */
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
+/* Slider styling */
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    width: 660px; /* Adjust as needed */
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide-image {
+    width: 220px;
+    height: auto;
+    margin: 0 5px;
+    border: 2px solid #d6e0e0;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px; /* Margin between image container and arrows */
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.arrow-left {
+    margin-right: 20px;
+}
+
+.arrow-right {
+    margin-left: 20px;
+}
